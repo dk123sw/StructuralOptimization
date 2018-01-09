@@ -1,0 +1,5 @@
+{
+//  "plugins": [["import", { "style": "css", "libraryName": "antd" }]]
+  "plugins": [["import",{ "style": "css", "libraryName": "antd-mobile" },{ "libraryName": "antd", "style": "css" }]]
+
+}
