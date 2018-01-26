@@ -6,7 +6,10 @@
 }
 /*reset*/
 #proTime {
-    position: absolute !important;
+    position:absolute !important;
     bottom:12vh;
     left:0;
+}
+.labelRow {
+    display:inline;
 }

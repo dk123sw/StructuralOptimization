@@ -55,11 +55,11 @@ export default class extends Component {
                 <First onIndexChange={this.onIndexChange}
                        index={this.state.index}
                        status={this.state.status}/>
-                <div id='proTime'>
-                    <Second
-                        onChoiceTime={this.onChoiceTime}
-                    />
-                </div>
+                {/*<div id='proTime'>*/}
+                    {/*<Second*/}
+                        {/*onChoiceTime={this.onChoiceTime}*/}
+                    {/*/>*/}
+                {/*</div>*/}
                 <Third
                     index={this.state.index}
                     status={this.state.status}
@@ -67,6 +67,7 @@ export default class extends Component {
                     onStatusChange={this.onStatusChange}
                     onIndexChange={this.onIndexChange}
                     onVelocityChange={this.onVelocityChange}
+                    onChoiceTime={this.onChoiceTime}
                 />
             </div>
         )

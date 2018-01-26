@@ -4,6 +4,7 @@ var ROOT_PATH = path.resolve(__dirname);
 var APP_PATH = path.resolve(ROOT_PATH, 'app');
 var BUILD_PATH = path.resolve(ROOT_PATH, 'build');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
+const Jarvis = require('webpack-jarvis');
 
 module.exports = {
     devtool: 'source-map',
@@ -75,7 +76,10 @@ module.exports = {
 			"process.env": { 
 				NODE_ENV: JSON.stringify("production")
 			}
-		})
+		}),
+        new Jarvis({
+            port: 1337 // optional: set a port
+        })
     ],
     externals: {
         'BMap': 'BMap'

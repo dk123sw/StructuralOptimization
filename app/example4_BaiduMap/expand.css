@@ -1,0 +1,71 @@
+#expand {
+    position: absolute;
+    bottom:8px;
+    right:8px;
+}
+
+#expand-begin {
+    position: absolute;
+    bottom:8px;
+    right:8px;
+    animation:myfirst-begin 1s;
+    -moz-animation:myfirst-begin 1s; /* Firefox */
+    -webkit-animation:myfirst-begin 1s; /* Safari and Chrome */
+    -o-animation:myfirst-begin 1s;
+}
+@keyframes myfirst-begin
+{
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(90deg);}
+}
+
+@-moz-keyframes myfirst-begin /* Firefox */
+{
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(90deg);}
+}
+
+@-webkit-keyframes myfirst-begin /* Safari 和 Chrome */
+{
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(90deg);}
+}
+
+@-o-keyframes myfirst-begin /* Opera */
+{
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(90deg);}
+}
+
+#expand-end {
+    position: absolute;
+    bottom:8px;
+    right:8px;
+    animation:myfirst-end 1s;
+    -moz-animation:myfirst-end 1s; /* Firefox */
+    -webkit-animation:myfirst-end 1s; /* Safari and Chrome */
+    -o-animation:myfirst-end 1s;
+}
+@keyframes myfirst-end
+{
+    0% {transform: rotate(90deg);}
+    100% {transform: rotate(0deg);}
+}
+
+@-moz-keyframes myfirst-end /* Firefox */
+{
+    0% {transform: rotate(90deg);}
+    100% {transform: rotate(0deg);}
+}
+
+@-webkit-keyframes myfirst-end /* Safari 和 Chrome */
+{
+    0% {transform: rotate(90deg);}
+    100% {transform: rotate(0deg);}
+}
+
+@-o-keyframes myfirst-end /* Opera */
+{
+    0% {transform: rotate(90deg);}
+    100% {transform: rotate(0deg);}
+}

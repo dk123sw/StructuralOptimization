@@ -1,0 +1,42 @@
+/*Replay控件*/
+#replay {
+    height: 60px;
+}
+/*点击播放按钮*/
+#replay #replay_button {
+    float:left;
+    width:20vw;
+    height:48px;
+    margin-top:6px;
+    text-align:center;
+}
+/*滑动组件*/
+#replay #replay_slider {
+    float:left;
+    width:80vw;
+    height:60px;
+}
+/*第一个滑动组件*/
+#replay_slider .replay_slider_first {
+    height:6vh;
+    margin-top:5%;
+    margin-right:10px;
+    margin-left:10px;
+}
+/*第二个滑动组件*/
+#replay_slider .replay_slider_second {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 100px ;
+    margin-top:-10px;
+}
+
+/*仅有一个滑动组件*/
+#replay_slider .replay_slider_only {
+     margin-top: 30px;
+     margin-right:10px;
+     margin-left:10px;
+ }
+#replay_slider .replay_slider_none {
+   display:none;
+}
