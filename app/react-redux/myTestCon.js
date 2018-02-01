@@ -1,20 +1,22 @@
 import React, {Component} from 'react'
 import {connect} from 'react-redux';
-import First from '../myTest/frist';
+import Test from '../example7_reduxTest/reduxTest';
 import {proButton,proValue} from "./action";
 
 function select(state) {
     return{
         reButton:state.reButton,
-        reValue:state.reValue,
+        // reValue:state.reValue,
     }
 }
 
 function dispatchIns(dispatch) {
     return{
         proButton:(content)=>dispatch(proButton(content)),
-        proValue:(content)=>dispatch(proValue(content)),
+        // proValue:(content)=>dispatch(proValue(content)),
+        // addValue:(content)=>dispatch(addValue(content)),
+        // delValue:(content)=>dispatch(delValue(content)),
     }
 }
 
-export default connect(select,dispatchIns)(First);
+export default connect(select,dispatchIns)(Test);

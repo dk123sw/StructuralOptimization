@@ -1,7 +1,7 @@
 import BMap from 'BMap';
 import React, {Component} from 'react';
 import DATA from '../DATA.js';
-import wheel from '../../app/myTest/wheel.png';
+import wheel from './/wheel.png';
 
 let map;
 let point;

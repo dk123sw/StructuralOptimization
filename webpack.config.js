@@ -74,7 +74,7 @@ module.exports = {
         }),
         new webpack.DefinePlugin({//production生产环境development开发环境
 			"process.env": { 
-				NODE_ENV: JSON.stringify("production")
+				NODE_ENV: JSON.stringify("development")
 			}
 		}),
         new Jarvis({

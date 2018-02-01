@@ -1,12 +1,12 @@
 #expand {
     position: absolute;
-    bottom:8px;
+    bottom:24px;
     right:8px;
 }
 
 #expand-begin {
     position: absolute;
-    bottom:8px;
+    bottom:24px;
     right:8px;
     animation:myfirst-begin 1s;
     -moz-animation:myfirst-begin 1s; /* Firefox */
@@ -39,7 +39,7 @@
 
 #expand-end {
     position: absolute;
-    bottom:8px;
+    bottom:24px;
     right:8px;
     animation:myfirst-end 1s;
     -moz-animation:myfirst-end 1s; /* Firefox */

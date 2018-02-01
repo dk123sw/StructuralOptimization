@@ -1,5 +1,5 @@
 import Button from './react-redux/reducer_Button';
-import Value from '././react-redux/reducer_Value';
+import Value from './react-redux/reducer_Value';
 
 function coreData(state = {}, action) {
     return {

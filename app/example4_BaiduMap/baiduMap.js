@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import BMap from 'BMap';
 import {ActionSheet} from 'antd-mobile';
-import Icon from './/expand.png';
+import Icon from './expand.png';
 import DATA from '../DATA';
 import './expand.css';
 
@@ -69,6 +69,7 @@ export default class extends Component {
         for(let i=0 ;i<DATA.position.length;i++){
             ArrayPoint[i] = new BMap.Point(DATA.position[i].lng , DATA.position[i].lat);
         }
+        //ArrayPoint并不是一个数组,是Point的实例对象(使用数组是无法生成轨迹的)
         let track = new BMap.Polyline(ArrayPoint, {strokeColor: '#108ee9'});
         map.addOverlay(track);
         map.setViewport(ArrayPoint);
@@ -91,7 +92,7 @@ export default class extends Component {
     addControl =() =>{
         let opts = {
             anchor:BMAP_ANCHOR_BOTTOM_LEFT,
-            offset: new BMap.Size(50, 0), //此偏移量是由左下角建立的坐标系
+            offset: new BMap.Size(10, 10), //此偏移量是由左下角建立的坐标系
         };
         map.addControl(new BMap.NavigationControl(opts));
     };
@@ -126,8 +127,8 @@ export default class extends Component {
     render() {
         return(
             <div>
-                <div id="map_canvas" style={{width: '100%', height: '100vh', overflow: 'hidden'}}/>
-                <img id={imgId} src={require('.//expand.png')} onClick={this.onExpandClick}/>
+                <div id="map_canvas" style={{width: '100%', height: '90vh', overflow: 'hidden'}}/>
+                <img id={imgId} src={require('./expand.png')} onClick={this.onExpandClick}/>
             </div>
         )
     }

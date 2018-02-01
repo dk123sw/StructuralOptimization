@@ -1,10 +1,10 @@
 import {IsValue} from "./action";
 
-function Value(state=0 ,action) {
+function Value(state,action) {
     switch (action.type){
         case IsValue:
         {
-            return action.content;
+            return IsValue;
         }
         default:
             return state;

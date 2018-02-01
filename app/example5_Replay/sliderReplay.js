@@ -53,8 +53,8 @@ class Replay extends Component {
                         className={SliderFName}
                         defaultValue={0}
                         min={0}
-                        max={this.props.sliderMax}
-                        value={this.props.Value}
+                        max={'sliderMax' in this.props?this.props.sliderMax:100}
+                        value={this.props.value}
                         onChange={this.onIndexChange}
                         trackStyle={{
                             height: '5px',

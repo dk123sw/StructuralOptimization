@@ -77,11 +77,11 @@ export default class extends Component {
                     type={this.state.value}                 //'1'代表双滚动条，'2'代表单滚动条
                     buttonStatus={this.state.buttonStatus}  //按钮状态
                     onClick={this.onClick}                  //按钮的点击事件
-                    Value={this.state.index}                //目前滑动的值
+                    value={this.state.index}                //目前滑动的值
                     onIndexChange={this.onIndexChange}      //移动滑块的回调
-                    sliderMax={this.state.sliderMax}        //移动滑动的最大值
-                    velocity={this.state.velocity}          //控制移动速度
-                    onVelocityChange={this.onVelocityChange}//速度滑块的回调
+                    sliderMax={this.state.sliderMax}        //移动滑动的最大值(默认100，父组件可不写)
+                    velocity={this.state.velocity}          //控制移动速度(只适应于类型1)
+                    onVelocityChange={this.onVelocityChange}//速度滑块的回调(只适应于类型1)
                 />
             </div>
         )
